@@ -93,10 +93,10 @@ h1n span {
   color:#0C1A23;
 }
 .col-sm-3{
-  background-color: red;
+  background-color: transparent;
   margin-top:0px;
   margin-bottom:0px;
-  color:white;
+  color: transparent;
 }
 .col-sm-6{
   background-color: transparent;
@@ -111,14 +111,14 @@ h1n span {
   position: absolute;
   text-align: left;
   top: 180px; 
-  left: 14px; 
+  left: 16px; 
   width: 30%;
 }
 .game2{
   position: absolute;
   text-align: left;
   top: 180px; 
-  right: 14px; 
+  right: 16px; 
   width: 30%;
 }
 .list-group-item1:first-child {
