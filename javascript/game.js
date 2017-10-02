@@ -22,7 +22,7 @@ var updateGuessesLeft = function() {
 };
 
 var updateNumberToGuess = function() {
-  this.numebrToGuess = this.computerChoices[Math.floor(Math.random() * this.computerChoices.length)];
+  this.numberToGuess = this.computerChoices[Math.floor(Math.random() * this.computerChoices.length)];
 };
 var updateGuessesSoFar = function() {
   // Here we take the guesses the user has tried -- then display it as letters separated by commas. 
@@ -46,7 +46,9 @@ updateGuessesLeft();
 //When key is released it becomes the users guess
 document.onkeyup = function(event) {
     guessesLeft--;
-//   var userGuess = number.fromCharCode(event.keyCode).toLowerCase();
+  var userGuess = Number(event.keyCode);
+  // .fromCharCode(event.keyCode);
+  // .toLowerCase();
 
   guessedNumbers.push(userGuess);
   updateGuessesLeft();

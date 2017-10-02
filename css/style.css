@@ -55,15 +55,15 @@ h2 small {
 h3 small {
   font-size: 14px;
 }
-h4small {
-  font-size: 16px;
+h1n {
+  font-size: 40px;
   line-height: 2;
   position: absolute; 
   top: 20px; 
   left: 0; 
   width: 100%;
 }
-h4small span { 
+h1n span { 
   color: white; 
   /* font: bold 24px/45px Helvetica, Sans-Serif;  */
   line-height: 1px;  
@@ -107,18 +107,18 @@ h4small span {
 .image{
   position: relative;
 }
-.game1{
+#game1{
   position: absolute;
   text-align: left;
-  top: 200px; 
-  left: 12px; 
+  top: 180px; 
+  left: 14px; 
   width: 30%;
 }
 .game2{
   position: absolute;
   text-align: left;
-  top: 200px; 
-  right: 12px; 
+  top: 180px; 
+  right: 14px; 
   width: 30%;
 }
 .list-group-item1:first-child {
@@ -129,7 +129,7 @@ h4small span {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-.game1 span{
+#game1 span{
   /* color: red;  */
   /* font: bold 24px/45px Helvetica, Sans-Serif;  */
   /* line-height: 1px;   */
@@ -149,7 +149,7 @@ h4small span {
   display: block;
   padding-left: 0;
   margin-bottom: 20px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid transparent;
   color:white;
 }
@@ -158,7 +158,7 @@ h4small span {
   padding-left: 0;
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
   color:white;
 }
 .list-group-item1 {
@@ -184,3 +184,50 @@ p {
   color:white;
   background-color: rgba(255, 255, 255, 0.2);
 }
+#wins2{
+  background: rgba(27, 27, 179, 0.5);
+}
+#losses2{
+  background: rgba(27, 27, 179, 0.5);
+}
+#guessLeft2{
+  background: rgba(27, 27, 179, 0.5);
+  margin-bottom: 0px;
+}
+#let{
+  margin-bottom: 0px;
+}
+#let2{
+  background: rgba(27, 27, 179, 0.5);
+}
+/* #triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 30px solid rgba(255, 255, 255, 0.34);
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  text-align: left;
+  top: 210px; 
+  right: 166px; 
+} */
+/* #talkbubble {
+  width: 160px;
+  height: 230px;
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+#talkbubble:before {
+  content:"";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 13px solid transparent;
+} */
