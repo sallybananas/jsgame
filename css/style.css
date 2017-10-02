@@ -1,0 +1,186 @@
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  background-color: #0C1A23;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: #0C1A23;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;  font-size: 14px;
+  color: white;
+  background-color: #0C1A23 !important;
+  align-content: center;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+h1, h2, h3 {
+  line-height: 40px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+  font-size: 31.5px;
+}
+h3 {
+  font-size: 24.5px;
+}
+h4 {
+  font-size: 17.5px;
+  margin:0px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 11.9px;
+}
+h1 small {
+  font-size: 24.5px;
+}
+h2 small {
+  font-size: 17.5px;
+}
+h3 small {
+  font-size: 14px;
+}
+h4small {
+  font-size: 16px;
+  line-height: 2;
+  position: absolute; 
+  top: 20px; 
+  left: 0; 
+  width: 100%;
+}
+h4small span { 
+  color: white; 
+  /* font: bold 24px/45px Helvetica, Sans-Serif;  */
+  line-height: 1px;  
+  background: rgba(0, 0, 0, 0.3); /* fallback color */
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px; 
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.col-sm-12{
+  background-color: transparent;
+  color:;
+  line-height: 20px;
+  align-content: center;
+  color:#0C1A23;
+}
+.col-sm-3{
+  background-color: red;
+  margin-top:0px;
+  margin-bottom:0px;
+  color:white;
+}
+.col-sm-6{
+  background-color: transparent;
+  color: white;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.image{
+  position: relative;
+}
+.game1{
+  position: absolute;
+  text-align: left;
+  top: 200px; 
+  left: 12px; 
+  width: 30%;
+}
+.game2{
+  position: absolute;
+  text-align: left;
+  top: 200px; 
+  right: 12px; 
+  width: 30%;
+}
+.list-group-item1:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.list-group-item2:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.game1 span{
+  /* color: red;  */
+  /* font: bold 24px/45px Helvetica, Sans-Serif;  */
+  /* line-height: 1px;   */
+  background: rgba(0, 0, 0, 0.3); /* fallback color */
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0px; 
+}
+.game2 span{
+  /* color: red;  */
+  /* font: bold 24px/45px Helvetica, Sans-Serif;  */
+  /* line-height: 1px;   */
+  background: rgba(0, 0, 0, 0.3); /* fallback color */
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0px; 
+}
+.list-group1 {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color:white;
+}
+.list-group2 {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color:white;
+}
+.list-group-item1 {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  margin-bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+  color:white;
+}
+.list-group-item2 {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  margin-bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+  color:white;
+}
+p {
+  margin: 0 0 10px;
+  color:white;
+  background-color: rgba(255, 255, 255, 0.2);
+}
