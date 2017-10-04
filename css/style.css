@@ -3,6 +3,9 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
   background-color: #0C1A23;
+  /* background:url('images/dits.gif') repeat-y 100% 100% fixed;
+  height:100%;
+  width:100%; */
 }
 .container{
   width: 100%;
@@ -18,6 +21,9 @@ body {
   color: white;
   background-color: #0C1A23 !important;
   align-content: center;
+  /* background:url('images/dits.gif') repeat-y 100% 100% fixed;
+  height:100%;
+  width:100%; */
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-weight: normal;
