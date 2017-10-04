@@ -8,6 +8,7 @@ var guesses = 3;
 var guessesLeft = 3;
 var guessedNumbers = [];
 var numberToGuess = null;
+var gameRunning = true;
 
 
 
@@ -26,13 +27,14 @@ var updateNumberToGuess = function() {
 };
 var updateGuessesSoFar = function() {
   // Here we take the guesses the user has tried -- then display it as letters separated by commas. 
-  document.querySelector('#let').innerHTML = "Your Guesses so far: " + guessedLetters.join(', ');
+  document.querySelector('#let').innerHTML = "Your Guesses so far: " + guessedNumbers + " ";
 };
 // Function will be called when we reset everything
 var reset = function() {
   totalGuesses = 3;
   guessesLeft = 3;
   guessedNumbers = [];
+  gameRunning = true;
 
   updateNumberToGuess();
   updateGuessesLeft();
@@ -45,30 +47,38 @@ updateGuessesLeft();
 
 //When key is released it becomes the users guess
 document.onkeyup = function(event) {
-    guessesLeft--;
-  var userGuess = Number(event.keyCode);
+  
+  var userGuess = parseInt(event.key);
+  console.log(parseInt(event.key));
+  console.log(userGuess);
   // .fromCharCode(event.keyCode);
   // .toLowerCase();
 
   guessedNumbers.push(userGuess);
-  updateGuessesLeft();
-  updateGuessesSoFar();
 
-        if (guessesLeft > 0){
-            if (userGuess == numberToGuess){
-                wins++;
-                document.querySelector('#wins').innerHTML = "Wins: " + wins;
-                alert("You are impressive mortal. Perhaps you are psychic!");
-                reset();
-            }
-        }else if(guessesLeft == 0){
-            // Then we will loss and we'll update the html to display the loss 
-            losses++;
-            document.querySelector('#losses').innerHTML = "Losses: " + losses;
-            alert("Sorry, you're not psychic mere mortal. Try again?");
-            // Then we'll call the reset. 
-            reset();
-        }
+  if (gameRunning) {
+    guessesLeft--;
+    updateGuessesLeft();
+    updateGuessesSoFar();
+  
+          if (guessesLeft > 0){
+              if (userGuess == numberToGuess){
+                  wins++;
+                  document.querySelector('#wins').innerHTML = "Wins: " + wins;
+                  alert("You are impressive mortal. Perhaps you are psychic!");
+                  reset();
+              }
+          }else if(guessesLeft == 0){
+              // Then we will loss and we'll update the html to display the loss 
+              losses++;
+              document.querySelector('#losses').innerHTML = "Losses: " + losses;
+              alert("Sorry, you're not psychic mere mortal. Try again?");
+              // Then we'll call the reset.
+              gameRunning = false 
+              reset();
+          }
+
+  }
 };
 
 
